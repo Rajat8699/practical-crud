@@ -1,10 +1,8 @@
 import { combineReducers } from "redux";
-import taskReducer from "./tasks/tasksSlice";
-
-interface Reducer{taskReducer:any}
+import postReducer from "./posts/postsSlice";
 
 const rootReducer = combineReducers({
-    taskReducer,
+    postReducer,
 });
 
 export default rootReducer;
