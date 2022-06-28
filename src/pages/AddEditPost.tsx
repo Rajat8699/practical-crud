@@ -109,7 +109,7 @@ const AddEditPost = (props: any) => {
                         placeholder="id"
                         type="number"
                         className="block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300 dark:border-gray-700 dark:focus:ring-2 dark:focus:ring-offset-2 dark:focus:ring-gray-600"
-                        {...register("id", { required: true, min: 1, max: 99 })}
+                        {...register("id", { required: true, min: 1 })}
                       />
                     </div>
                     {errors.id && (
@@ -154,7 +154,6 @@ const AddEditPost = (props: any) => {
                       {...register("userId", {
                         required: true,
                         min: 1,
-                        max: 99,
                       })}
                     />
                   </div>
