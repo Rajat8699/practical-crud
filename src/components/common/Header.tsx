@@ -71,7 +71,10 @@ const Header = () => {
 
         {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
         <div className={`items-center md:flex ${isOpen ? "block" : "hidden"}`}>
-          <div className="flex flex-col md:flex-row md:mx-6 my-5 md:my-auto">
+          <div
+            className="flex flex-col md:flex-row md:mx-6 my-5 md:my-auto"
+            onClick={() => setIsOpen(false)}
+          >
             <Link
               className="my-1 text-sm font-medium text-primary-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-primary-500 dark:hover:text-primary-400 md:mx-4 md:my-0"
               to="/post/add"
@@ -80,7 +83,10 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="flex justify-center md:block">
+          <div
+            className="flex justify-center md:block"
+            onClick={() => setIsOpen(false)}
+          >
             <a
               className="relative text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300"
               href="#"
