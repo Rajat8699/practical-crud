@@ -2,7 +2,7 @@ import { memo } from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-grey-600 bg-primary-500/30 dark:bg-grey-700 body-font">
+    <footer className="text-grey-600 bg-primary-500/30 dark:bg-grey-700 body-font static bottom-0">
       <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
         <a className="flex title-font font-medium items-center md:justify-start justify-center text-primary-900 dark:text-white">
           <svg
