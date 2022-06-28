@@ -1,6 +1,6 @@
 import * as Effects from "redux-saga/effects";
 import axios from "axios";
-import { getPosts, getPostsSuccess, getPostsFailed, editPost, editPostSuccess, editPostFailed, addPost, addPostSuccess, addPostFailed, deletePost, deletePostSuccess, deletePostFailed, getPostDataSuccess, getPostDataFailed } from "../../reducers/posts/postsSlice";
+import { getPostsSuccess, getPostsFailed, editPostSuccess, editPostFailed, addPostSuccess, addPostFailed, deletePostSuccess, deletePostFailed, getPostDataSuccess, getPostDataFailed } from "../../reducers/posts/postsSlice";
 
 const { put, takeLatest, all } = Effects;
 const call:any = Effects.call
